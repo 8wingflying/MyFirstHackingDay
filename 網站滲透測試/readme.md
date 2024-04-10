@@ -30,7 +30,8 @@
   - OWASP Mutillidae II
     - https://owasp.org/www-project-mutillidae-ii/
     - https://github.com/webpwnized/mutillidae-docker
-    - https://github.com/webpwnized/mutillidae 
+    - https://github.com/webpwnized/mutillidae
+    - 教學影片[Using Mutillidae II](https://www.youtube.com/playlist?list=PLZOToVAK85MrsyNmNp0yyUTBXqKRTh623)
   - [OWASP Vulnerable Web Applications Directory (VWAD)](https://owasp.org/www-project-vulnerable-web-applications-directory/)
 - 其他滲透測試
   - [OWASP Vulnerable Container Hub(VULCONHUB)]() 
