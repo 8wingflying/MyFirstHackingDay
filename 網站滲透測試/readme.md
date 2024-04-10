@@ -7,7 +7,7 @@
     - WAF(Web Application Firewall) 
   - 網站安全測試
     - OWASP Web Security Testing Guide(WSTG)
-    - OWASP[Offensive Web Testing Framework (OWTF)](https://owasp.org/www-project-developer-guide/release/verification/tools/offensive_web_testing_framework/)
+    - OWASP [Offensive Web Testing Framework (OWTF)](https://owasp.org/www-project-developer-guide/release/verification/tools/offensive_web_testing_framework/)
     - OWASP 其他安全測試
       - [OWASP Mobile Application Security Testing Guide (MASTG)](https://mas.owasp.org/MASTG/) 
 - 網站滲透測試環境建置(使用docker建置虛擬環境)
