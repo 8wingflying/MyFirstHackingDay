@@ -11,6 +11,11 @@
     - OWASP 其他安全測試
       - [OWASP Mobile Application Security Testing Guide (MASTG)](https://mas.owasp.org/MASTG/) 
 - 網站滲透測試環境建置(使用docker建置虛擬環境)
+  - 下載Linux
+    - [Kali Linux 2019(那一年)]()
+    - [Kali Linux 2023.4]()
+    - [Ubuntu Linux 23.04]()
+    - [Centos]
   - DVWA測試環境建置
 - 網站漏洞(1)必知的injection 攻擊
   - command injection
