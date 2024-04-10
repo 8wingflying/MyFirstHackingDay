@@ -2,6 +2,7 @@
 
 # 攻擊機 Kali Linux
 - [冰山一角的駭客工具介紹 ](https://ithelp.ithome.com.tw/users/20114110/ironman/2536)
+- [入門級資安實戰：以Hack The Box為輔學習網路漏洞掃描與利用](https://ithelp.ithome.com.tw/users/20145688/ironman/6733)
 - [The Ultimate Kali Linux Book - Third Edition|](https://www.packtpub.com/product/the-ultimate-kali-linux-book-third-edition/9781835085806)
 ## nmap
 - 網路掃描(Network Scanning)
