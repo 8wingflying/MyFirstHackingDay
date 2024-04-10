@@ -14,15 +14,18 @@
   - 下載Linux
     - [Kali Linux 2019(那一年)]()
     - [Kali Linux 2023.4]()
-    - [Ubuntu Linux 23.04]()
-    - [Centos]
   - DVWA測試環境建置
 - 網站漏洞(1)必知的injection 攻擊
   - command injection
   - SQLi(SQL injection) 
 - 網站漏洞(2)File inclusion 漏洞
 - 網站漏洞(3)File upload 漏洞
+
+## 延伸學習
 - 其他漏洞測試
+- 更多SQLi
+  - [Hacking Articles|How to set up SQLI Lab](https://www.hackingarticles.in/set-sqli-lab-kali/)
+  - [Hacking Articles|Comprehensive Guide to Sqlmap (Target Options)](https://www.hackingarticles.in/comprehensive-guide-to-sqlmap-target-options/)
 - 其他網站滲透測試環境建置(使用docker建置虛擬環境)
   - OWASP WebGoat | OWASP Foundation
     - [WebGoat](./WebGoat.md) 
