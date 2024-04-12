@@ -1,6 +1,11 @@
 ## 攻防情境說明
 - [攻防情境說明](scenario.png)
-# 攻擊機 Kali Linux
+  - 攻擊機 Kali Linux
+  - 靶機 metasploitable3 
+
+
+# 延伸學習
+## 攻擊機 Kali Linux
 - [冰山一角的駭客工具介紹 ](https://ithelp.ithome.com.tw/users/20114110/ironman/2536)
 - [入門級資安實戰：以Hack The Box為輔學習網路漏洞掃描與利用](https://ithelp.ithome.com.tw/users/20145688/ironman/6733)
   - [Hack the box](https://www.hackthebox.com/) 
@@ -9,9 +14,17 @@
 - 網路掃描(Network Scanning)
   - RustScan
     - [Hacking Articles| A Detailed Guide on RustScan](https://www.hackingarticles.in/a-detailed-guide-on-rustscan/) 
-  - nmap 
+  - nmap
+    - [Nmap 滲透測試指南|商廣明]() 
 
-## Metasploit
+## Metasploit [快速指南](Metasploit.md)
+- Mastering Metasploit
+  - 第四版
+  - 第三版
+    - [簡體中譯本(精通 Metasploit 滲透測試, 3/e)](https://www.tenlong.com.tw/products/9787115511904?list_name=rd)
+  - 第二版
+    - [簡體中譯本(精通 Metasploit 滲透測試, 3/e)](https://www.tenlong.com.tw/products/9787115511904?list_name=rd)
+- [從實踐中學習 Metasploit 5 滲透測試 | 大學霸IT達人](https://www.tenlong.com.tw/products/9787111630852?list_name=srh) 
 ## 更多工具 see [Kali Tools](https://www.kali.org/tools/all-tools/)
 - [Maryam – Perfect OSINT Framework]()
 ## 靶機(metasploitable3)
