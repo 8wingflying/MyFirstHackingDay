@@ -1,0 +1,18 @@
+# NMAP_NSE.md
+- auth
+- broadcast
+- brute
+- default
+- discovery
+- dos
+- [exploit](https://nmap.org/nsedoc/categories/exploit.html)
+  - http-vuln-cve2017-5689
+  - [smb-vuln-ms08-067](https://nmap.org/nsedoc/scripts/smb-vuln-ms08-067.html)
+    - `nmap --script smb-vuln-ms08-067.nse -p445 <host>`  
+- external
+- fuzzer
+- intrusive
+- malware
+- safe
+- version
+- vuln 
