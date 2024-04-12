@@ -8,7 +8,7 @@
 # 
 # nmap 功能 ==> 原理
 - Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
-  -  
+  - `-PA [portlist]`  (TCP ACK Ping) 
 - port掃描(port scan)
 - 信息蒐集
 - 作業系統檢測(OS fingerprint | see  8. Remote OS Detection)
@@ -17,7 +17,10 @@
 - [服務和`版本`探索(see  7. Service and Application `Version` Detection)](https://nmap.org/man/zh/man-version-detection.html)
   - `-sV` == > 版本探测)
   - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
-- [防火墙/IDS躲避和哄骗]()
+- [Bypass firewall/IDS(防火墙/IDS躲避和哄骗)](https://nmap.org/man/zh/man-bypass-firewalls-ids.html)
+  - f (封包分段); --mtu (使用指定的MTU)
+    - `-f`選項要求掃描時(包挺ping掃描)使用小的IP封包分段。
+    - 其思路是將TCP頭分段在幾個封包中，使得封包篩檢程式、 IDS以及其它工具的檢測更加困難。
   - `-D <decoy1 [，decoy2][，ME]，...>`  ==> 使用(decoy scan)誘餌隱蔽掃描
   - `-S <IP_Address>` == > 源地址哄騙(使用假 來源位址)
   - `-ttl <value>` == > 設置IP time-to-live (使用假 time-to-live)
@@ -35,7 +38,15 @@
   - `-T2` == Polite Scan 兩個送出封包間格 0.4秒
   - `-T1` == Sneaky Scan 兩個送出封包間格 15秒
   - `-T0` == Paranoid Scan 兩個送出封包間格 5分鐘
+  - -T0 ~ -T1 是避免 IDS 告警，但掃描速度頗慢， 沒有特殊需求，不建議使用
 - Nmap的格式化輸出
+  - Nmap提供5種不同的輸出格式:
+    - `-oN` <filespec>(標準輸出)
+    - `-oX` <filespec>(XML輸出)
+    - `-oS` <filespec>(腳本 KIDD|3 輸出)
+    - `-oG` <filespec>(Grep輸出)
+    - `-oA` <basename>(輸出至所有格式)
+# NMAP Script Engine(NMAP NSE)
 
 # IPAS考題初階
 ```
@@ -48,6 +59,7 @@
 (D) 利用該伺服器已知之漏洞下載資料庫
 ```
 答案: A
+
 # IPAS考題中階  
 ```
 關於 Nmap工具之指令操作，下列敘述何者正確？
