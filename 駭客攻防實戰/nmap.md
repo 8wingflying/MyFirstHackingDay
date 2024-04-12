@@ -1,10 +1,27 @@
 # nmap
 
+- [Nmap参考指南(Man Page)](https://nmap.org/man/zh/index.html)
 
+
+# 
+# nmap 功能
+- Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
+- port掃描(port scan)
+- 信息蒐集
+- 作業系統檢測(OS fingerprint | see  8. Remote OS Detection)
+  - `-O` ==> 啟用作業系統檢測
+  - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`。
+- [服務和版本探索(see  7. Service and Application Version Detection)](https://nmap.org/man/zh/man-version-detection.html)
+  -  
+
+# nmap 設定
+- Timing Templates (-T)
+- Nmap的格式化輸出
 
 # IPAS考題初階
 ```
-某 MIS人員欲對公司一重要伺服器（功能包含檔案伺服器、資料庫功能）使用 Nmap來執行進行滲透測試，以便瞭解該資訊設備之漏洞是否全數修補完成，
+某 MIS人員欲對公司一重要伺服器（功能包含檔案伺服器、資料庫功能）使用 Nmap來執行進行滲透測試，
+以便瞭解該資訊設備之漏洞是否全數修補完成，
 請問該 MIS使用此工具最主要之目的為下列何者？
 (A) 利用該伺服器已知對外開放之服務埠進行情蒐
 (B) 利用該伺服器已知之漏洞提升權限
