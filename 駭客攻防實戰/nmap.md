@@ -50,7 +50,9 @@
 - 使用lua語言開發
 - 604個script [NSE Scriptsu 依照字母排序](https://nmap.org/nsedoc/scripts/)
 - [依照功能類類型展示](NMAP_NSE.md)
-
+- 範例:http-slowloris 攻擊
+  - 檢測是否有此漏洞 == > nmap --script `[http-slowloris-check](https://nmap.org/nsedoc/scripts/http-slowloris-check.html)`  <target>
+  
 
 # IPAS考題初階
 ```
