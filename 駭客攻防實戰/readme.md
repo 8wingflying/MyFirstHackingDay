@@ -1,7 +1,8 @@
 ## 攻防情境說明
-- [攻防情境說明](scenario.png)
-  - 攻擊機 Kali Linux
-  - 靶機 metasploitable3 
+![攻防情境說明](scenario.png)
+
+- 攻擊機 Kali Linux
+- 靶機 metasploitable3 
 
 
 # 延伸學習
