@@ -48,11 +48,15 @@
     - `-oA` <basename>(輸出至所有格式)
 # PART II:NMAP Script Engine(NMAP NSE)
 - 使用lua語言開發
-- 604個script [NSE Scriptsu 依照字母排序](https://nmap.org/nsedoc/scripts/)
-- [依照功能類類型展示](NMAP_NSE.md)
+- 604個script
+- [NSE Scripts: 依照字母排序](https://nmap.org/nsedoc/scripts/)
+- [NSE Scripts: 依照功能類類型展示](NMAP_NSE.md)
 - 範例:http-slowloris 攻擊
   - 檢測是否有此漏洞 == > `nmap --script http-slowloris-check <target>`
     - [http-slowloris-check](https://nmap.org/nsedoc/scripts/http-slowloris-check.html)
+  - 執行攻擊 == > `nmap --script http-slowloris --max-parallelism 400  <target>`
+    - [http-slowloris](https://nmap.org/nsedoc/scripts/http-slowloris.html) 
+ 
   
 
 # IPAS考題初階
