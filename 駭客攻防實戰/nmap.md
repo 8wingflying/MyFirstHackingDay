@@ -6,7 +6,7 @@
 
 
 # 
-# nmap 功能 ==> 原理
+# PART I: nmap 功能 ==> 原理
 - Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
   - `-PA [portlist]`  (TCP ACK Ping) 
 - port掃描(port scan)
@@ -14,10 +14,10 @@
 - 作業系統檢測(OS fingerprint | see  8. Remote OS Detection)
   - `-O` ==> 啟用作業系統檢測
   - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
-- [服務和`版本`探索(see  7. Service and Application `Version` Detection)](https://nmap.org/man/zh/man-version-detection.html)
+- [服務和`版本`探索Service and Version Detection(see  7. Service and Application `Version` Detection)](https://nmap.org/man/zh/man-version-detection.html)
   - `-sV` == > 版本探测)
   - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
-- [Bypass firewall/IDS(防火墙/IDS躲避和哄骗)](https://nmap.org/man/zh/man-bypass-firewalls-ids.html)
+- [Bypass firewall/IDS(防火墙/IDS躲避和哄骗)Firewall/IDS Evasion and Spoofing](https://nmap.org/man/zh/man-bypass-firewalls-ids.html)
   - f (封包分段); --mtu (使用指定的MTU)
     - `-f`選項要求掃描時(包挺ping掃描)使用小的IP封包分段。
     - 其思路是將TCP頭分段在幾個封包中，使得封包篩檢程式、 IDS以及其它工具的檢測更加困難。
@@ -46,7 +46,11 @@
     - `-oS` <filespec>(腳本 KIDD|3 輸出)
     - `-oG` <filespec>(Grep輸出)
     - `-oA` <basename>(輸出至所有格式)
-# NMAP Script Engine(NMAP NSE)
+# PART II:NMAP Script Engine(NMAP NSE)
+- 使用lua語言開發
+- 604個script [NSE Scriptsu 依照字母排序](https://nmap.org/nsedoc/scripts/)
+- [依照功能類類型展示](NMAP_NSE.md)
+
 
 # IPAS考題初階
 ```
