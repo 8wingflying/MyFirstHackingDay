@@ -1,21 +1,36 @@
 # nmap
 
+# 參考文獻
+- [Nmap Network Scanning](https://nmap.org/book/toc.html)
 - [Nmap参考指南(Man Page)](https://nmap.org/man/zh/index.html)
 
 
 # 
-# nmap 功能
+# nmap 功能 ==> 原理
 - Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
 - port掃描(port scan)
 - 信息蒐集
 - 作業系統檢測(OS fingerprint | see  8. Remote OS Detection)
   - `-O` ==> 啟用作業系統檢測
-  - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`。
-- [服務和版本探索(see  7. Service and Application Version Detection)](https://nmap.org/man/zh/man-version-detection.html)
-  -  
+  - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
+- [服務和`版本`探索(see  7. Service and Application `Version` Detection)](https://nmap.org/man/zh/man-version-detection.html)
+  - `-sV` == > 版本探测)
+  - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
+- [防火墙/IDS躲避和哄骗]()  
 
-# nmap 設定
-- Timing Templates (-T)
+# nmap 設定與調教
+- [效能調教(see 6. Optimizing Nmap Performance)](https://nmap.org/book/performance.html)
+- Timing Templates (-T)  數字越大代表掃描速度越快
+  - 範例: nmap `-T1`  -p21-25  192.168.1.104
+  - `-T5` == Nmap Insane Scan
+    - used for sending packets insanely fast and waits only 0.3 seconds for the response.
+  - `-T4` == Nmap Aggressive Scan
+    - 手冊說如果網路環境穩定，參數建議調整為 -T4。
+    - `-T4` 禁止動態 TCP Port 掃描延遲超過 10 ms
+  - `-T3` == Normal Scan: 預設使用
+  - `-T2` == Polite Scan 兩個送出封包間格 0.4秒
+  - `-T1` == Sneaky Scan 兩個送出封包間格 15秒
+  - `-T0` == Paranoid Scan 兩個送出封包間格 5分鐘
 - Nmap的格式化輸出
 
 # IPAS考題初階
