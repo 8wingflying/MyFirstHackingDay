@@ -14,19 +14,19 @@
 ![DVWA_1_5.png](DVWA_1_5.png)
 
 
-## 防禦1:中階防禦 
+
 
 ![DVWA_1_6.png](DVWA_1_6.png)
 
-## 設定成medium
 
+## 防禦1:中階防禦 
 ![DVWA_1_7.png](DVWA_1_7.png)
 
-## 攻擊1:www.ksu.edu.tw; cat /etc/passwd  == > 攻擊失敗!
+## 設定成medium
 
 ![DVWA_1_8.png](DVWA_1_8.png)
 
-
+## 攻擊1:www.ksu.edu.tw; cat /etc/passwd  == > 攻擊失敗!
 ## 攻擊2: 127.0.0.1 |  cat /etc/passwd
 
 
