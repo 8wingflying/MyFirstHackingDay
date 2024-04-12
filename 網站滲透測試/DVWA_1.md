@@ -25,11 +25,10 @@
 ![DVWA_1_8.png](DVWA_1_8.png)
 
 # 攻擊1:www.ksu.edu.tw; cat /etc/passwd  == > 攻擊失敗!
-# 攻擊2: 127.0.0.1 |  cat /etc/passwd
-
 
 ![DVWA_1_9.png](DVWA_1_9.png)
 
+# 攻擊2: 127.0.0.1 |  cat /etc/passwd
 ## 防禦2:高階防禦
 
 
