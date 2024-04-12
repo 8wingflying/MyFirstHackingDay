@@ -1,14 +1,10 @@
-
-# iPAS經濟部產業人才能力鑑定推動網
-# iPAS資安專業證照
-- [考試樣題&雲端課程](https://www.ipas.org.tw/ISE/AbilityPageContent.aspx?mnuno=855dc817-1946-41de-8c50-c6b44e6f0949&pgeno=92664c36-72cf-418c-98a9-c4e8a769dd64)
+# iPAS資安證照
 - iPAS經濟部產業人才能力鑑定推動網 | [資訊安全工程師](https://www.ipas.org.tw/ISE/)
-- 初級:一年兩次 | 中級:一年一次  [歷年考試成果](https://www.ipas.org.tw/ISE/AbilityPageContent.aspx?pgeno=b53d1159-f9d1-415b-bd2f-b915ae16e39d)
-  - 112年第二次初級資訊安全工程師能力鑑定－2023/11/25 ~ 2023/11/25
-  - 112年第一次初級資訊安全工程師能力鑑定－2023/06/03 ~ 2023/06/03
-  - 112年第二次中級資訊安全工程師能力鑑定－2023/08/12 ~ 2023/08/12
-
+- [考試樣題&雲端課程](https://www.ipas.org.tw/ISE/AbilityPageContent.aspx?mnuno=855dc817-1946-41de-8c50-c6b44e6f0949&pgeno=92664c36-72cf-418c-98a9-c4e8a769dd64)
 ### 初級
+- 初級:一年有兩次考試
+  - 第一次: 6.1 (報名截止04/21)
+  - 第二次: 10或11月某日  
 - 考兩科
 - 每科考試時間: 75分鐘
 - 每科目都只考單選題: 50題
