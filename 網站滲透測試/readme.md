@@ -14,6 +14,7 @@
   - 下載Linux
     - [Kali Linux 2019(那一年)]()
     - [Kali Linux 2023.4]()
+      - ksu/ksu202208
   - DVWA測試環境建置
 - 網站漏洞(1)必知的injection 攻擊
   - command injection
