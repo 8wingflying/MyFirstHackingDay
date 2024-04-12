@@ -16,7 +16,7 @@
 
 
 # 恩師 龍大大
-![Dragon](Dragon)
+![Dragon](DRAGON_1.png)
 
 | CEH | CHFI|
 |---| ---|
