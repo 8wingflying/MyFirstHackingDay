@@ -1,5 +1,5 @@
 ## 攻防情境說明
-
+- [攻防情境說明](scenario.png)
 # 攻擊機 Kali Linux
 - [冰山一角的駭客工具介紹 ](https://ithelp.ithome.com.tw/users/20114110/ironman/2536)
 - [入門級資安實戰：以Hack The Box為輔學習網路漏洞掃描與利用](https://ithelp.ithome.com.tw/users/20145688/ironman/6733)
