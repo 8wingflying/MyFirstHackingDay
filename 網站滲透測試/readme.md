@@ -1,4 +1,12 @@
 ## 網站滲透測試
+- 1.使用docker建置DVWA網站漏洞平台
+- 2.設定DVWA網站漏洞平台的難度等級
+- 3.網站漏洞測試(1).Command Injection
+- 4.網站漏洞測試(2).Sql injection
+- 5.網站漏洞測試(3).File Upload 漏洞
+- 6.網站漏洞測試(4).File inclusion 漏洞 
+
+## 網站滲透測試
 - 網站資安威脅與安全強化
   - 網站資安威脅
     - OWASP TOP 10
