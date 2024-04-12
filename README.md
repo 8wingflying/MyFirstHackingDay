@@ -16,6 +16,8 @@
 
 
 # 恩師 龍大大
+![Dragon](Dragon)
+
 | CEH | CHFI|
 |---| ---|
 |[駭客殺手–CEH認證課程](https://www.uuu.com.tw/Course/Show/300/EC-Council-CEH-7-%E9%A7%AD%E5%AE%A2%E6%8A%80%E8%A1%93%E5%B0%88%E5%AE%B6%E8%AA%8D%E8%AD%89%E8%AA%B2%E7%A8%8B)|[CHFI資安鑑識調查專家](https://www.uuu.com.tw/Course/Show/1810/EC-Council-CHFI%E8%B3%87%E5%AE%89%E9%91%91%E8%AD%98%E8%AA%BF%E6%9F%A5%E5%B0%88%E5%AE%B6%E8%AA%8D%E8%AD%89%E8%AA%B2%E7%A8%8B)|
