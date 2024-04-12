@@ -8,6 +8,7 @@
 # 
 # nmap 功能 ==> 原理
 - Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
+  -  
 - port掃描(port scan)
 - 信息蒐集
 - 作業系統檢測(OS fingerprint | see  8. Remote OS Detection)
@@ -16,7 +17,10 @@
 - [服務和`版本`探索(see  7. Service and Application `Version` Detection)](https://nmap.org/man/zh/man-version-detection.html)
   - `-sV` == > 版本探测)
   - `-A` ==> 同時啟用`作業系統檢測`和`版本檢測`
-- [防火墙/IDS躲避和哄骗]()  
+- [防火墙/IDS躲避和哄骗]()
+  - `-D <decoy1 [，decoy2][，ME]，...>`  ==> 使用(decoy scan)誘餌隱蔽掃描
+  - `-S <IP_Address>` == > 源地址哄騙(使用假 來源位址)
+  - `-ttl <value>` == > 設置IP time-to-live (使用假 time-to-live)
 
 # nmap 設定與調教
 - [效能調教(see 6. Optimizing Nmap Performance)](https://nmap.org/book/performance.html)
@@ -56,7 +60,8 @@
 
 # CEH考題 
 ```
-Which of the following scanning method splits the TCP header into several packets and makes it difficult for packet filters to detect the purpose of the packet?
+Which of the following scanning method splits the TCP header into several packets
+and makes it difficult for packet filters to detect the purpose of the packet?
 A. ACK flag probe scanning
 B. ICMP Echo scanning
 C. SYN/FIN scanning using IP fragments
