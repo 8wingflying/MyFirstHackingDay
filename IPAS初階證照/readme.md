@@ -1,7 +1,7 @@
 # iPAS資安證照
 - iPAS經濟部產業人才能力鑑定推動網 | [資訊安全工程師](https://www.ipas.org.tw/ISE/)
 - [考試樣題&雲端課程](https://www.ipas.org.tw/ISE/AbilityPageContent.aspx?mnuno=855dc817-1946-41de-8c50-c6b44e6f0949&pgeno=92664c36-72cf-418c-98a9-c4e8a769dd64)
-### 初級:人生第一張資安證照 [中級|專業證照](IPAS_M2024.md)
+### 初級:人生第一張資安證照 ~~~~~~[中級|專業證照](IPAS_M2024.md)
 - 初級:一年有兩次考試
   - 第一次: 6.1 (報名截止04/21)
   - 第二次: 10或11月某日  
