@@ -51,12 +51,17 @@
 - 604個script
 - [NSE Scripts: 依照字母排序](https://nmap.org/nsedoc/scripts/)
 - [NSE Scripts: 依照功能類類型展示](NMAP_NSE.md)
-- 範例:http-slowloris 攻擊
+- 範例 1:http-slowloris 攻擊
   - 檢測是否有此漏洞 == > `nmap --script http-slowloris-check <target>`
     - [http-slowloris-check](https://nmap.org/nsedoc/scripts/http-slowloris-check.html)
-  - 執行攻擊 == > `nmap --script http-slowloris --max-parallelism 400  <target>`
+  - 執行http-slowloris 攻擊 == > `nmap --script http-slowloris --max-parallelism 400  <target>`
     - [http-slowloris](https://nmap.org/nsedoc/scripts/http-slowloris.html) 
- 
+- 範例 2:最新漏洞檢測:Exchange Server伺服器|CVE-2022-41082
+  - [6萬臺Exchange Server仍未修補ProxyNotShell漏洞2023.1](https://www.ithome.com.tw/news/154989)
+  - [nse-exchange](https://github.com/Diverto/nse-exchange)
+  - 單一目標 ==> `nmap -sV -T4 -v --script=http-vuln-cve-2022 scanme.nmap.org`
+  - 網段掃描 ==> `nmap -p443 -T4 -v --script=http-vuln-cve-2022 10.0.0.0/16 `
+
   
 
 # IPAS考題初階
