@@ -29,12 +29,13 @@
 ![DVWA_1_9.png](DVWA_1_9.png)
 
 # 攻擊2: 127.0.0.1 |  cat /etc/passwd
-## 防禦2:高階防禦
+![DVWA_1_10.png](DVWA_1_10.png)
+# 防禦2:高階防禦
 
-
-## 攻擊3: 127.0.0.1 ||  cat /etc/passwd
-
-## 防禦3:完美防禦(Impossible)
-
+![DVWA_1_11.png](DVWA_1_11.png)
+# 攻擊3: 127.0.0.1 ||  cat /etc/passwd
+![DVWA_1_12.png](DVWA_1_12.png)
+# 防禦3:完美防禦(Impossible)
+![DVWA_1_13.png](DVWA_1_13.png)
 
 
