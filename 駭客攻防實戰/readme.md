@@ -40,6 +40,8 @@
     - [Penetration Testing in Metasploitable 3 with SMB and Tomcat](https://www.hackingarticles.in/penetration-testing-metasploitable-3-smb-tomcat/)
   - [Metasploitable 3 实战渗透测试](https://blog.csdn.net/weixin_51167520/article/details/114745286)
 
+## 延伸學習
+- [Log4J 漏洞分析與Penetration Testing](https://www.hackingarticles.in/a-detailed-guide-on-log4j-penetration-testing/)
 ## 滲透測試專題 Hacking Articles
 - [Penetration Testing](https://www.hackingarticles.in/penetration-testing/)
 - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
