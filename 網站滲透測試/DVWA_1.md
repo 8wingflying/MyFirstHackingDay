@@ -1,9 +1,10 @@
 
-## 正常執行功能
-
+## 正常執行功能: www.ksu.edu.tw
 ![DVWA_1_1.png](DVWA_1_1.png)
 
 ![DVWA_1_2.png](DVWA_1_2.png)
+
+## 攻擊1:www.ksu.edu.tw; cat /etc/passwd
 
 ![DVWA_1_3.png](DVWA_1_3.png)
 
