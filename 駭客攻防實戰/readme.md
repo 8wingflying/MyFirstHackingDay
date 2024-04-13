@@ -9,7 +9,9 @@
 - 網路連線偵測 ==> netstat
 - 終結 惡意網路連線 ==>
   - tasklist
-  - taskkill 
+  - taskkill
+    - /PID
+    -  /F 參數強制進程終止，這對於許多不想關閉的討厭任務很有用。 
 - [基本Windows技術](BasicWindows.md)
 
 # 延伸學習
