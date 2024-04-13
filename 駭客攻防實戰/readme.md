@@ -21,5 +21,11 @@
   - 滲透測試專題 Hacking Articles
     - [Penetration Testing](https://www.hackingarticles.in/penetration-testing/)
     - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
-
+- 更多紅藍攻防
+  - Red team 滲透測試靶機
+    - [Hack The Box: Hacking Training For The Best](https://www.hackthebox.com/)
+    - [TryHackMe | Cyber Security Training](https://tryhackme.com/)
+    - [VulnHub| Vulnerable By Design](https://www.vulnhub.com/) 
+  - Blue Team
+    - [LetsDefend - Blue Team Training](https://www.letsdefend.io/) 
 
