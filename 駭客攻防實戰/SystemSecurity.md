@@ -1,0 +1,107 @@
+# System Security(系統安全)
+- 作業系統基本觀念
+- Windows 作業系統及其安全機制
+  - Windows 作業系統
+    - 獨立伺服器 vs 網域環境(Windows AD|Active Directory) vs Cloud(Azure雲端)
+    - 檔案系統: FAT(32) vs NTFS
+    - Shell
+      - cmd [Windows 命令commands](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/windows-commands)
+      - powershell [Windows powershell](https://learn.microsoft.com/zh-tw/powershell/scripting/overview?view=powershell-7.4)
+    - 日誌稽核
+      - auditpol [中文說明](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/auditpol) ~~[英文說明](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/auditpol)
+      - reg | regedit 
+    - Windows Registry 
+  - 作業系統安全機制
+    - UAC(User Account Control)
+    - Windows 認證機制(Windows Authentication)
+  - Windows 安全防護
+    - Windows Defender 
+- Linux作業系統及其安全機制
+  -  
+
+### 108年第五題組第一題  
+- SID  [安全性識別碼 (Security identifiers )](https://learn.microsoft.com/zh-tw/windows-server/identity/ad-ds/manage/understand-security-identifiers)
+- 安全性識別碼可用來唯一識別安全性主體或安全性群組。
+- 安全性主體可以代表可由作業系統驗證的任何實體，例如使用者帳戶、電腦帳戶，或在使用者或電腦帳戶的安全性內容中執行的執行緒或進程。
+- 每個帳戶或群組，或帳戶安全性內容中執行的每個process，都有由授權單位發出的唯一 SID，例如 Windows 網域控制站。
+- SID 會儲存在安全性資料庫中。
+- 系統會產生 SID，以識別建立帳戶或群組時的特定帳戶或群組。
+- 當 SID 做為使用者或群組的唯一識別碼時，永遠不會再次用來識別其他使用者或群組。
+- 每次使用者登入時，系統會為該使用者建立存取權杖。
+- 存取權杖包含使用者所屬之任何群組的 SID、使用者權限和 SID。
+- 此權杖會為使用者在該電腦上執行的任何動作提供安全性內容。
+- 更多說明請參閱底下文件
+  - [安全性識別碼](https://learn.microsoft.com/zh-tw/windows-server/identity/ad-ds/manage/understand-security-identifiers)
+    - 什麼是安全性識別碼？
+    - 安全性識別碼的運作方式
+    - 安全性識別碼架構
+      - SID 的元件(字串格式)：S-R-X-Y1-Y2-Yn-1-Yn
+        - S	表示字串為 SID
+        - R	指出修訂層級
+        - X	指出識別碼授權單位值
+        - Y	代表一系列子授權值，其中 n 是值數目
+          - 系列的第一個部分 (-Y1-Y2-Yn-1) 是網域識別碼。 SID 的這個元素在具有數個網域的企業中變得相當重要，因為網域識別碼會區分一個網域所簽發的 SID 與企業中所有其他網域所簽發的 SID。 企業中的兩個網域都共用相同的網域識別碼。
+          - 子授權值數列中的最後一個專案 (-Yn) 是相對識別碼。 它會區分一個帳戶或群組與網域中所有其他帳戶和群組。 任何網域中沒有任何兩個帳戶或群組共用相同的相對識別碼。
+      - 企業中的每個網域都有 Domain Admins 群組，而每個群組的 SID 則不同。
+      - 範例==>代表 Contoso， Ltd. 網域中 Domain Admins 群組的 SID (Contoso\Domain Admins) ：
+        - S-1-5-21-1004336348-1177238915-682003330-`512`
+        - Contoso\Domain Admins 的 SID 具有：
+          - 修訂層級 (1)
+          - 識別碼授權單位 (5、NT 授權單位)
+          - 網域識別碼 (21-1004336348-1177238915-682003330、Contoso)
+          - (512、Domain Admins) 相對識別碼 
+    - 範例
+      - S-1-5-domain-`500`	系統管理員	系統管理員的使用者帳戶。
+        - 每部電腦都有本機系統管理員帳戶，而每個網域都有網域系統管理員帳戶。系統管理員帳戶是在作業系統安裝期間建立的第一個帳戶。
+        - 帳戶無法刪除、停用或鎖定，但可以重新命名。
+        - 根據預設，系統管理員帳戶是 Administrators 群組的成員，而且無法從該群組中移除。
+      - S-1-5-domain-`501`	來賓	沒有個別帳戶之人員的使用者帳戶。
+        - 每部電腦都有本機客體帳戶，而每個網域都有網域來賓帳戶。
+        - 根據預設，Guest 是「所有人」和「來賓」群組的成員。 網域來賓帳戶也是網域來賓和網域使用者群組的成員。
+        - 不同于匿名登入，來賓是真正的帳戶，而且可用來以互動方式登入。 來賓帳戶不需要密碼，但可以有密碼。
+      - S-1-5-domain-`502`	KRBTGT	金鑰發佈中心所使用的使用者帳戶， (KDC) 服務。 帳戶只存在於網域控制站上。
+      - S-1-5-domain-`512`	網域管理員	全域群組，具有有權管理網域的成員。
+        - 根據預設，Domain Admins 群組是已加入網域之所有電腦上的 Administrators 群組成員，包括網域控制站。
+        - Domain Admins 是群組的任何成員在網域 Active Directory 中建立之任何物件的預設擁有者。
+        - 如果群組的成員建立其他物件，例如檔案，則預設擁有者是 Administrators 群組。
+
+###  網軟認證機制 (IPAS 中階108年第五題組第二題  NTLM)
+- windows並不保存純文字密碼，只保存密碼的Hash。
+- WINDOWS認證依建置環境有底下作法:
+  - Azure雲端環境 ==> 使用Azure AD authentication  [What is Azure Active Directory authentication?](https://learn.microsoft.com/en-us/azure/active-directory/authentication/overview-authentication)
+  - Active directory(AD)環境==> 使用Active directory authentication
+    - AD 是微軟Windows Server中，負責架構中大型網路環境的集中式目錄管理服務（Directory Services）
+    - 在Windows 2000 Server開始內建於Windows Server產品
+    - AD處理在組織中的網路物件，物件可以是使用者、群組、電腦、網域控制站、郵件、設定檔、組織單元、樹系等等，只要是在Active Directory結構定義檔（schema）中定義的物件，就可以儲存在Active Directory資料檔中，並利用Active Directory Service Interface來存取
+    - 實際上，許多Active Directory的管理工具都是利用這個介面來呼叫並使用Active Directory的資料。
+    - Active Directory也被做為微軟部份伺服器軟體與網域構連的資料結構，例如Microsoft Exchange Server 2003-2007，均使用AD來儲存其個人信箱資料（透過建立新的Active Directory Schema），並將AD列為建置Exchange Server的必要條件。
+    - 更多AD說明請參閱 [Active Directory](https://zh.wikipedia.org/zh-tw/Active_Directory)
+  - 獨立伺服器使用本地密碼認證==> [SAM(Security Accounts Manager)安全帳戶管理器](https://www.techtarget.com/searchenterprisedesktop/definition/Security-Accounts-Manager)
+    - SAM 是Microsoft Windows 操作系統 ( OS ) 中的一個數據庫文件，其中包含用戶名和密碼。
+    - SAM 的主要目的是使系統更加安全，並在系統被盜時防止數據洩露。
+    - SAM 可在不同版本的 Windows 中使用，包括Windows XP、Windows Vista、Windows 7、Windows 8.1、  Windows 10和Windows 11。
+    -  SAM 為每個用戶帳戶分配一個局域網 (LAN)密碼和一個 Microsoft Windows 密碼。為了提高安全性，這兩者都經過加密，任何用戶都無法訪問。這些也稱為密碼哈希。簡單來說，可以將其視為包含所有用戶密碼的鎖定日記。
+    -  在用戶嘗試登錄期間，Windows 系統將要求輸入用戶名和密碼。輸入密碼後，系統將根據 SAM 中的密碼進行驗證。
+    -  如果用戶名和相關密碼與 SAM 中的條目匹配，則會發生一系列事件。這最終將導致授予用戶訪問系統的權限。
+    -  如果用戶名和密碼與 SAM 中的任何條目都不匹配，則會返回錯誤消息。用戶將被要求再次輸入信息。
+    -  如果個人計算機( PC )僅由一名用戶使用，且該PC未連接到LAN，則SAM將僅存儲並詢問一名用戶的密碼。一旦系統被訪問，SAM 文件就會繼續在後台運行。
+    - 本地密碼認證時，作業系統會使用使用者輸入的密碼作為憑證去與系統中的密碼進行驗證 ，路徑為%SystemRoot%\system32\config\sam。
+    - 過程：winlogon.exe -> 接收用戶輸入 -> lsass.exe -> (認證)
+    - 在用戶註銷、重啟、鎖屏後，作業系統會讓winlogon顯示登錄介面，待輸入過後將密碼交給lsass.exe，這個進程的記憶體中會存一份純文字密碼，將純文字密碼加密成NTLM Hash，對SAM資料庫比較認證。
+    - 更多說明請參閱 [NTLM authentication](https://learn.microsoft.com/en-us/windows-server/security/kerberos/ntlm-overview)
+- 資安事故簿
+  - CVE-2021-36934 [Windows 10驚傳一般使用者也能讀取SAM組態檔的漏洞，恐被攻擊者濫用，獲得高系統權限](https://www.ithome.com.tw/news/145812) 
+- 更多說明請參閱底下文件
+  - [Understanding Windows local password hashes (NTLM)](https://security.stackexchange.com/questions/161889/understanding-windows-local-password-hashes-ntlm#:~:text=The%20NTLM%20hash%20is%20only,the%20string%20c46b9e588fa0d112de6f59fd6d58eae3%20as%20%40iain%20explained.)
+  - [LM？NTLM？Net NTLM？](https://www.testzero-wz.com/2020/08/11/LM%E3%80%81NTLM%E4%B8%8ENet-NTLM/)
+  - [LM？NTLM？Net NTLM？](https://www.testzero-wz.com/2020/08/11/LM%E3%80%81NTLM%E4%B8%8ENet-NTLM/)
+  - [Windows Pentesting Lab Walkthrough: NTLM Hash Cracking](https://www.youtube.com/watch?v=PxRx9TDj57Q&t=15s)
+  - [Auditing Active Directory - Cracking NTLM Hashes With Hashcat](https://www.youtube.com/watch?v=Ndm5t4sy8o0)
+
+## 更多 WINDOWS 知識
+- [如何通过Windows日志溯源Psexec](https://www.testzero-wz.com/2020/03/01/Psexec%E6%BA%AF%E6%BA%90/)
+- [Cobalt Strike Stager & Stage Shellcode 深度解析](https://www.testzero-wz.com/2020/10/22/Cobalt-Strike-Stager&Stage-Shellcode-%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/)
+- https://learn.microsoft.com/zh-tw/windows/security/threat-protection/auditing/security-auditing-overview
+- https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/security-auditing-overview
+- https://learn.microsoft.com/zh-tw
+- https://learn.microsoft.com/en-us/
