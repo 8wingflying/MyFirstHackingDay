@@ -16,6 +16,7 @@
     -  /F 參數強制進程終止，這對於許多不想關閉的討厭任務很有用。 
 - 課堂學習
   - [基本Windows技術](BasicWindows.md)
+  - Windows/Linux常用網路指令
   - 工作排程器(Task Scheduler)
     - [Windows 工作排程器：每天自動關機教學與範例](https://officeguide.cc/windows-task-scheduler-auto-shutdown-tutorial/) 
 
