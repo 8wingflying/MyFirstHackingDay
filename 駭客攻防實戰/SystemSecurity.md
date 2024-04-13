@@ -14,6 +14,8 @@
   - 作業系統安全機制
     - UAC(User Account Control)
     - Windows 認證機制(Windows Authentication)
+      - NTLM Authentication
+      - Kerberos Authentication 
   - Windows 安全防護
     - Windows Defender 
 - Linux作業系統及其安全機制
@@ -26,9 +28,14 @@
     - linux commands
     - Linux systemd 系統服務管理與sysmtemctl  
   - Linux安全機制
-    -
+    - Linux System Authentication
+      - Pluggable Authentication Modules(PAM): password-based authentication | token ......
+      - SSH key-based authentication
+      - LDAP(Lightweight Directory Access Protocol) <==微軟是 AD
+      - shadow passwords
     - [SELinux(Security Enhanced Linux)](https://linux.vbird.org/linux_server/rocky9/0140selinux.php) 
   - Linux安全防護機制
+    - Linux audit framework 與 Linux audit logs
     - Linux 防火牆 iptable
       - [Linux 防火牆設定](https://linux.vbird.org/linux_server/rocky9/0180firewall.php)   
 - 系統攻擊技術與防禦技術
