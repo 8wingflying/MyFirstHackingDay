@@ -5,7 +5,8 @@
 - [Nmap参考指南(Man Page)](https://nmap.org/man/zh/index.html)
 
 
-# 
+# 參考書籍
+- [Nmap: Network Exploration and Security Auditing Cookbook - Second Edition]()
 # PART I: nmap 功能 ==> 原理
 - Host Discovery (“Ping Scanning”)活躍主機發現(IP scan)
   - `-PA [portlist]`  (TCP ACK Ping) 
