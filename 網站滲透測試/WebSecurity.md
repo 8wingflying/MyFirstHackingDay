@@ -53,10 +53,7 @@
 
 ## 網站滲透測試
 - 網站漏洞平台環境建置(使用docker建置虛擬環境)
-- 下載Linux
-  - [Kali Linux 2019(那一年)]()
-  - [Kali Linux 2023.4]()
-      - ksu/ksu202208
+  - 下載Linux
   - DVWA測試環境建置
 - 網站漏洞(1)必知的injection 攻擊
   - command injection
