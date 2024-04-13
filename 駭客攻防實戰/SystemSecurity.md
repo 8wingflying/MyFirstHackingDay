@@ -17,8 +17,23 @@
   - Windows 安全防護
     - Windows Defender 
 - Linux作業系統及其安全機制
-  -  
+  - Linux作業系統
+    - kernal vs shell
+    - shell
+      - linux shell_1:bash csh zsh
+        - shell programming
+      - linux shell_2: Powershell core
+    - linux commands
+    - Linux systemd 系統服務管理與sysmtemctl  
+  - Linux安全機制
+    -
+    - [SELinux(Security Enhanced Linux)](https://linux.vbird.org/linux_server/rocky9/0140selinux.php) 
+  - Linux安全防護機制
+    - Linux 防火牆 iptable
+      - [Linux 防火牆設定](https://linux.vbird.org/linux_server/rocky9/0180firewall.php)   
+- 系統攻擊技術與防禦技術
 
+## Windows 作業系統及其安全機制
 ### 108年第五題組第一題  
 - SID  [安全性識別碼 (Security identifiers )](https://learn.microsoft.com/zh-tw/windows-server/identity/ad-ds/manage/understand-security-identifiers)
 - 安全性識別碼可用來唯一識別安全性主體或安全性群組。
