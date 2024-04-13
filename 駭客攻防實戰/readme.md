@@ -7,7 +7,9 @@
 # 攻防實戰(1)攻擊
 # 攻防實戰(2)Windows防禦
 - 網路連線偵測 ==> netstat
-![netstat]()
+
+![netstat](netstat.JPG)
+
 - 終結 惡意網路連線 ==> 小小抱怨 : 教科書及linux 都是用`process(行程)` 微軟硬是要新創`工作(Task)` 
   - `工作`管理員(`Task` Manager)
     - [Windows 10 開啟「 工作管理員 」的11種方法](https://walker-a.com/archives/3436) 
