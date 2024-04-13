@@ -7,12 +7,17 @@
 # 攻防實戰(1)攻擊
 # 攻防實戰(2)Windows防禦
 - 網路連線偵測 ==> netstat
-- 終結 惡意網路連線 ==>
+- 終結 惡意網路連線 ==> 小小抱怨 : 教科書及linux 都是用`process(行程)` 微軟硬是要新創`工作(Task)` 
+  - `工作`管理員(`Task` Manager)
+    - [Windows 10 開啟「 工作管理員 」的11種方法](https://walker-a.com/archives/3436) 
   - tasklist
   - taskkill [微軟官方說明](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/taskkill)
     - /PID
     -  /F 參數強制進程終止，這對於許多不想關閉的討厭任務很有用。 
-- [基本Windows技術](BasicWindows.md)
+- 課堂學習
+  - [基本Windows技術](BasicWindows.md)
+  - 工作排程器(Task Scheduler)
+    - [Windows 工作排程器：每天自動關機教學與範例](https://officeguide.cc/windows-task-scheduler-auto-shutdown-tutorial/) 
 
 # 延伸學習
 - [滲透測試](PT.md)
