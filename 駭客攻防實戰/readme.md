@@ -17,7 +17,7 @@
 - 課堂學習
   - [基本Windows技術](BasicWindows.md)
   - Windows/Linux常用網路指令
-  - 工作排程器(Task Scheduler)
+  - 工作排程器(Task Scheduler)~~[中文版](https://learn.microsoft.com/zh-tw/windows/win32/taskschd/about-the-task-scheduler) [英文版](https://learn.microsoft.com/zh-tw/windows/win32/taskschd/task-scheduler-start-page)
     - [Windows 工作排程器：每天自動關機教學與範例](https://officeguide.cc/windows-task-scheduler-auto-shutdown-tutorial/) 
 
 # 延伸學習
