@@ -20,8 +20,7 @@
 - 兩台機器都可以ping 到對方 
 ![m3_3.png](m3_3.png)
 
-# 攻防實戰(1)攻擊
-# A.駭客攻防實戰營(1):Kali linux 攻擊與滲透測試技術
+# 攻防實戰(1):Kali linux 攻擊與滲透測試技術
 - 步驟1:nmap -sV -p- 10.0.2.4
 ![nmap1.png](nmap1.png)
 - 步驟2:啟動metasploit== > msfconsole
