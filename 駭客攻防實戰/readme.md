@@ -75,6 +75,9 @@
   - [Exploitation of Metasploitable 3 using Glassfish Service](https://www.hackingarticles.in/exploitation-metasploitable-3-using-glassfish-service/)
   - [Penetration Testing in Metasploitable 3 with SMB and Tomcat](https://www.hackingarticles.in/penetration-testing-metasploitable-3-smb-tomcat/)
 - [Metasploitable 3 实战渗透测试](https://blog.csdn.net/weixin_51167520/article/details/114745286)
+- [Metasploit walkthrough](https://zero-day.io/metasploitwalkthrough/)
+- [Metasploitable 3 Walkthrough - Getting System](https://two06.blogspot.com/2016/12/metasploitable-3-walkthrough.html)
+- [Attacking Metasploitable 3 (Windows) - Metasploit Minute](https://www.youtube.com/watch?v=4HOGfSQEYuE)
 
 # 延伸學習
 - [滲透測試](PT.md)
