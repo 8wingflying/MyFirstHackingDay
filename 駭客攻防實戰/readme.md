@@ -28,7 +28,7 @@
 - [更多Kali linux 學習](Kali202304.md)
 - [靶機(metasploitable3)](metasploitable3.md)
 - 後續研讀
-  - [Log4J 漏洞分析與Penetration Testing](https://www.hackingarticles.in/a-detailed-guide-on-log4j-penetration-testing/)
+  - [Log4J 漏洞分析與Penetration Testing](Log4J.md)
   - 滲透測試專題 Hacking Articles
     - [Penetration Testing](https://www.hackingarticles.in/penetration-testing/)
     - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
