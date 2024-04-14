@@ -1,8 +1,8 @@
 # 攻防情境說明
 ![攻防情境說明](scenario.png)
 
-- 攻擊機 Kali Linux
-- 靶機 metasploitable3 
+- 攻擊機 Kali Linux ==> ksu/ksu202208
+- 靶機 metasploitable3 ==> vagrant/vagrant
 
 # 環境設定1:virtualbox安裝與設定
 - 標準安裝virtualbox ==> 下一步下一步就裝好了
