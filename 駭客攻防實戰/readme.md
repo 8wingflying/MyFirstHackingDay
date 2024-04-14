@@ -17,6 +17,9 @@
 ![A1.png](A1.png)
 
 # 環境設定2:
+- 檢視IP
+  - Windows ==> ipconfig
+  - Linux ==> ifconfig 
 - 確認攻擊機(Kali linux)與靶機(Metasploitable3)在同一個NAT網路
 ![m3_2.png](m3_2.png)
 - 兩台機器都可以ping 到對方 
