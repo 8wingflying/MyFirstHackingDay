@@ -40,3 +40,5 @@
   - Blue Team
     - [LetsDefend - Blue Team Training](https://www.letsdefend.io/) 
 
+
+![Mimikatz](Mimikatz.png)
