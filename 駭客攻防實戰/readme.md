@@ -66,10 +66,15 @@
     - [微軟官方說明](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/taskkill)
     - taskkill /PID XXXX /F
       - /F 參數強制進程終止，這對於許多不想關閉的討厭任務很有用。 
-- 課堂學習
-  - [基本Windows技術](BasicWindows.md)
 
-
+## 更多Metasploitable3解題
+- [Metasploitable 3 Vulnerabilities](https://github.com/rapid7/metasploitable3/wiki/Vulnerabilities)
+- [Metasploitable 3 (Linux) Walkthrough: An Exploitation Guide](https://stuffwithaurum.com/2020/04/17/metasploitable-3-linux-an-exploitation-guide/)
+- Hacking Articles
+  - [Manual Penetration Testing in Metasploitable 3](https://www.hackingarticles.in/manual-penetration-testing-metasploitable-3/)
+  - [Exploitation of Metasploitable 3 using Glassfish Service](https://www.hackingarticles.in/exploitation-metasploitable-3-using-glassfish-service/)
+  - [Penetration Testing in Metasploitable 3 with SMB and Tomcat](https://www.hackingarticles.in/penetration-testing-metasploitable-3-smb-tomcat/)
+- [Metasploitable 3 实战渗透测试](https://blog.csdn.net/weixin_51167520/article/details/114745286)
 
 # 延伸學習
 - [滲透測試](PT.md)
