@@ -44,9 +44,9 @@
 ![metasploit_4.png](metasploit_4.png)
 - 步驟6:進行攻擊 ==> exploit 或者 run
 ![metasploit_5.png](metasploit_5.png)
-- 步驟7:攻擊成功
+- 步驟7:攻擊成功  
 ![metasploit_6.png](metasploit_6.png)
-- 步驟8:進入到post-exploitation階段
+- 步驟8:進入到post-exploitation階段  ==> [Meterpreter](meterpreter.md)
 ![metasploit_7.png](metasploit_7.png)
 
 # 攻防實戰(2)Windows防禦
