@@ -124,3 +124,77 @@ FOR572: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Respo
 FOR578: Cyber Threat Intelligence
 FOR608: Enterprise-Class Incident Response & Threat Hunting
 ```
+
+# CompTIA
+### Network+
+```
+1.|	Comparing OSI Model Network Functions（比較 OSI 模型的網路功能）
+2.|	Deploying Ethernet Cabling（部署乙太網路的線路）
+3.|	Deploying Ethernet Switching（部署乙太網路的交換器）
+4.|	Troubleshooting Ethernet Networks（乙太網路的疑難排除）
+5.|	Explaining IPv4 Addressing（了解IPv4的定址模式）
+6.|	Supporting IPv4 and IPv6 Networks（如何同時支援IPv4與IPv6的網路）
+7.|	Configuring and Troubleshooting Routers（網路路由器的設定與疑難排除）
+8.|	Explaining Network Topologies and Types（了解網路的拓樸架構與類型）
+9.|	Explaining Transport Layer Protocols（了解傳輸層的協定）
+10.|	Explaining Network Services（了解什麼是網路服務）
+11.|	Explaining Network Applications（了解什麼是網路應用程式）
+12.|	Ensuring Network Availability（確保網路的可用性）
+13.|	Explaining Common Security Concepts（了解通用安全的概念）
+14.|	Supporting and Troubleshooting Secure Networks（安全網路的支援與疑難排除）
+15.|	Deploying and Troubleshooting Wireless Networks（無線網路的部署與疑難排除）
+16.|	Comparing WAN Links and Remote Access Methods（比較廣域網路連線與網路遠端存取連線的方法）
+17.|	Explaining Organizational and Physical Security Concepts（了解組織與實體安全的概念）
+18.|	Explaining Disaster Recovery and High Availability Concepts（了解災難重建與高可用性的概念）
+19.|	Applying Network Hardening Techniques（應用網路的強化技術）
+20.|	Summarizing Cloud and Datacenter Architecture（總論雲端與資料中心的架構）
+```
+### Security+
+```
+1.|	Summarize Fundamental Security Concepts(總論基本安全概念)
+2.|	Compare Threat Types(比較威脅類型)
+3.|	Explain Cryptographic Solutions(解釋加密解決方案)
+4.|	Implement Identity and Access Management(實施身份和存取管理)
+5.|	Secure Enterprise Network Architecture(安全的企業網路架構)
+6.|	Secure Cloud Network Architecture(安全的雲端網路架構)
+7.|	Explain Resiliency and Site Security Concepts(解釋彈性與網站安全的概念)
+8.|	Explain Vulnerability Management(解釋漏洞管理)
+9.|	Evaluate Network Security Capabilities(評估網路安全能力)
+10.|	Assess Endpoint Security Capabilities(評估端點安全能力)
+11.|	Enhance Application Security Capabilities(增強應用程式的安全能力)
+12.|	Explain Incident Response and Monitoring Concepts(解釋事件回應與監控概念)
+13.|	Analyze Indicators of Malicious Activity(分析惡意活動指標)
+14.|	Summarize Security Governance Concepts(歸納安全治理概念)
+15.|	Explain Risk Management Processes(解釋風險管理流程)
+16.|	Summarize Data Protection and Compliance Concepts(總論資料保護與合規性概念)
+```
+### CompTIA PenTest＋
+```
+1.|	Planning and Scoping Penetration Tests(如何規劃滲透測試的範圍)
+2.|	Conducting Passive Reconnaissance(如何進行被動式偵查)
+3.|	Performing Non-Technical Tests(如何執行非技術性的測試)
+4.|	Conducting Active Reconnaissance(如何進行主動式偵查)
+5.|	Analyzing Vulnerabilities(如何進行漏洞分析)
+6.|	Penetrating Networks(什麼是網路滲透)
+7.|	Exploiting Host-Based Vulnerabilities(如何利用主機式的漏洞)
+8.|	Testing Applications(應用程式的測試)
+9.|	Completing Post-Exploit Tasks(完成漏洞利用後的任務)
+10.|	Analyzing and Reporting Pen Test Results(如何分析並報告滲透測試的結果)
+```
+
+### CompTIA CySA＋網路資安分析師
+```
+1.|	Explaining the Importance of Security Controls(解釋安全控制的重要性)
+2.|	Utilizing Threat Data and Intelligence(如何利用威脅數據與情報)
+3.|	Analyzing Security Monitoring Data(如何分析安全監控的數據)
+4.|	Collecting and Querying Security Monitoring Data(如何收集與查看安全監控的數據)
+5.|	Utilizing Digital Forensics and Indicator Analysis Techniques(如何利用數位取證與指標分析的技術)
+6.|	Applying Incident Response Procedures(如何進行事件回應程序)
+7.|	Applying Risk Mitigation and Security Frameworks(如何進行風險緩解與安全框架)
+8.|	Performing Vulnerability Management(如何執行漏洞管理)
+9.|	Applying Security Solutions for Infrastructure Management(如何進行有關網路基礎架構的安全解決方案)
+10.|	Understanding Data Privacy and Protection(了解數據的隱私性與安全保護)
+11.|	Applying Security Solutions for Software Assurance(如何進行軟體保證的安全解決方案)
+12.|	Applying Security Solutions for Cloud and Automation(如何進行雲端自動化的安全解決方案)
+
+```
