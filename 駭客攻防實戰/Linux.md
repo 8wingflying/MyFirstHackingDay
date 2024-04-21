@@ -22,6 +22,7 @@
   - Chapter 12: Defensive Evasion and Exfiltration
 
 ## [Bash 資安管理手冊 (Cybersecurity Ops with bash)](https://www.tenlong.com.tw/products/9789865023232?list_name=srh)
+- [GITHUB](https://github.com/cybersecurityops/cyber-ops-with-bash/tree/master)
 ```
 第一部　基礎觀念
 第一章 指令列基礎
