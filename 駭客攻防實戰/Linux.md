@@ -4,6 +4,7 @@
 - 基本學習
   - [Linux Shell 程式設計與管理實務 [第三版] |臥龍小三](https://www.tenlong.com.tw/products/9786263332539?list_name=srh)
   - [Bash Cookbook (簡體中文版)](https://www.tenlong.com.tw/products/9787115527011?list_name=srh)
+  - [Mastering Linux Shell Scripting - Second Edition](https://www.packtpub.com/product/mastering-linux-shell-scripting-second-edition/9781788990554)
 - [Bash 資安管理手冊 (Cybersecurity Ops with bash)](https://www.tenlong.com.tw/products/9789865023232?list_name=srh)
 - [Black Hat Bash: Bash Scripting for Hackers and Pentesters]()
   - [Github](https://github.com/dolevf/Black-Hat-Bash)
