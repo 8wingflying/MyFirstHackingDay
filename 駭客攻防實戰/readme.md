@@ -86,6 +86,7 @@
 
 # 延伸學習
 - [滲透測試](PT.md)
+- [linux 學習](linux.md)
 - [更多Kali linux 學習](Kali202304.md)
 - [靶機(metasploitable3)](metasploitable3.md)
 - [基本Windows技術](BasicWindows.md)
