@@ -17,7 +17,7 @@
 - [KSU_Learning Online](KSU_Learning_Online.md)
 - [AIGC 實戰夏令營：高中生的第一個生成式 AI 營隊](https://aiacademy.tw/admission-summer2023-tp/)
 
-![GAI](GAI_1.png)
+![GAI](GAI.png)
 ## 加入 `崑山之巔駭客行腳`(暫定這個名稱)
 - 全程免費
 - 免費 上 IPAS 初階證照班(公定價:8000元| 你只要付教材費用<= 800元) ==> 還有 更多免費實戰課程
