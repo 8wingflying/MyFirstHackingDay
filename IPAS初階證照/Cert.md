@@ -87,6 +87,53 @@ Domain 8: 軟體開發安全Software Development Security
 # CEH Practical  ==> CEH + CEH|P == CEH Master
 - [EC-Council CEH Practical / Master 準備心得](https://medium.com/blacksecurity/ceh-practical-master-3e80cac180a2)
 
+# EC-Council Web 應用程式安全 (CWAHSS)
+- EC-Council Certified Web Application Hacking and Security 
+```
+Web應用程式：駭客與安全介紹
+
+初學級挑戰：SQL資料隱碼攻擊(SQL Injection)
+初學級挑戰：安全性錯誤配置(Security Misconfiguration)
+初學級挑戰：跨網站腳本攻擊(Cross Site Scripting)
+初學級挑戰：網路應用程式漏洞掃描和枚舉 (Scanning and Enumeration)
+
+中級挑戰：SQL資料隱碼攻擊(SQL Injection)
+中級挑戰：安全性錯誤配置(Security Misconfiguration)
+中級挑戰：無效的存取控管(Broken Access Control)
+
+精通級挑戰：無效的存取控管(Broken Access Control)
+精通級挑戰：安全性錯誤配置(Security Misconfiguration)
+精通級挑戰：伺服器層級認證與授權存取(Server Level Access)
+
+專家級挑戰：伺服器層級認證與授權存取(Server Level Access)
+專家級挑戰：安全性錯誤配置(Security Misconfiguration)
+```
+# EC-Council CPENT滲透測試專家認證
+- EC-Council Certified Penetration Tester 
+```
+Introduction to Penetration Testing (滲透測試介紹)
+Penetration Testing Scoping and Engagement (滲透測試範疇與締約)
+Open-Source Intelligence(OSINT) (開放情報蒐集)
+Social Engineering Penetration Testing (社交工程滲透測試)
+Network Penetration Testing -External(外網滲透測試)
+Network Penetration Testing -Internal(內網滲透測試)
+Network Penetration Testing -Perimeter Devices(網路周邊裝置滲透測試)
+Web Application Penetration Testing (網站程式滲透測試方法)
+Wireless Network Penetration Testing (無線網路滲透測試方法)
+IoT Penetration Testing (物聯網滲透測試)
+OT/SCADA Penetration Testing (工控滲透測試)
+Cloud Penetration Testing (雲端滲透測試方法)
+Binary Analysis and Exploitation (二進制程式分析與攻擊)
+Reports Writing and Post Test Action(撰寫報告與測試後續動作)
+```
+
+# OffSec
+- PEN-200: Penetration Testing Certification with Kali Linux ( OSCP )
+- PEN-300: Advanced Evasion Techniques and Breaching Defenses ( OSEP )
+- WEB-200: Foundational Web Application Assessments with Kali Linux ( OSWA) 
+- [OSCP 高階滲透測試精進班](https://college.itri.org.tw/Home/LessonData/35FC13F1-05A3-44CF-85B1-2D01B6F92632)
+![OSCP.png](OSCP.png)
+
 # CHFI 藍隊課程
 - EC-Council Computer Hacking Forensic Investigator
 - 資安鑑識調查專家認證
