@@ -84,6 +84,8 @@ Domain 8: 軟體開發安全Software Development Security
 - 崑山資工搭配課程:高等資訊安全 | 電腦攻防實務 | 滲透測試 | 網站安全
 - 適合職業:資安系統工程師、網路系統工程師、資安分析人員、滲透測試人員、資訊部門主管、資安長、資安顧問
 
+# CEH Practical  ==> CEH + CEH|P == CEH Master
+- [EC-Council CEH Practical / Master 準備心得](https://medium.com/blacksecurity/ceh-practical-master-3e80cac180a2)
 
 # CHFI 藍隊課程
 - EC-Council Computer Hacking Forensic Investigator
@@ -115,15 +117,14 @@ Domain 8: 軟體開發安全Software Development Security
 - 崑山資工搭配課程: 高等資安攻防實務 | 數位鑑識
 - 適合職業:資安系統工程師、網路系統工程師、鑑識分析人員、資訊部門主管、資安長、資安顧問
 - 國際知名培訓單位SANS根據ECSF規劃底下學習課程
-```
-FOR498: Digital Acquisition and Rapid Triage.
-FOR500: Windows Forensic Analysis
-FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics
-FOR528: Ransomware for Incident Responders
-FOR572: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Response
-FOR578: Cyber Threat Intelligence
-FOR608: Enterprise-Class Incident Response & Threat Hunting
-```
+  - FOR498: Digital Acquisition and Rapid Triage.
+  - FOR500: Windows Forensic Analysis
+  - FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics
+  - FOR528: Ransomware for Incident Responders
+  - FOR572: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Response
+  - FOR578: Cyber Threat Intelligence
+  - FOR608: Enterprise-Class Incident Response & Threat Hunting
+
 
 # CompTIA
 ### Network+
