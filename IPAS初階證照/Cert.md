@@ -130,7 +130,8 @@ Reports Writing and Post Test Action(撰寫報告與測試後續動作)
 # OffSec
 - PEN-200: Penetration Testing Certification with Kali Linux ( OSCP )
 - PEN-300: Advanced Evasion Techniques and Breaching Defenses ( OSEP )
-- WEB-200: Foundational Web Application Assessments with Kali Linux ( OSWA) 
+- WEB-200: Foundational Web Application Assessments with Kali Linux ( OSWA)
+- WEB-300: Advanced Web Attacks and Exploitation ( OSWE )
 - [OSCP 高階滲透測試精進班](https://college.itri.org.tw/Home/LessonData/35FC13F1-05A3-44CF-85B1-2D01B6F92632)
 ![OSCP.png](OSCP.png)
 
