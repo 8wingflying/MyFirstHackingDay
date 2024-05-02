@@ -117,13 +117,13 @@ Domain 8: 軟體開發安全Software Development Security
 - 崑山資工搭配課程: 高等資安攻防實務 | 數位鑑識
 - 適合職業:資安系統工程師、網路系統工程師、鑑識分析人員、資訊部門主管、資安長、資安顧問
 - 國際知名培訓單位SANS根據ECSF規劃底下學習課程
-  - FOR498: Digital Acquisition and Rapid Triage.
-  - FOR500: Windows Forensic Analysis
-  - FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics
-  - FOR528: Ransomware for Incident Responders
-  - FOR572: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Response
-  - FOR578: Cyber Threat Intelligence
-  - FOR608: Enterprise-Class Incident Response & Threat Hunting
+  - [FOR498: Digital Acquisition and Rapid Triage.](https://www.sans.org/cyber-security-courses/digital-acquisition-rapid-triage/)
+  - [FOR500: Windows Forensic Analysis](https://www.sans.org/cyber-security-courses/windows-forensic-analysis/)
+  - [FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics](https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/)
+  - [FOR528: Ransomware for Incident Responders](https://www.sans.org/cyber-security-courses/ransomware-and-cyber-extortion/)
+  - [FOR572: Advanced Network Forensics: Threat Hunting, Analysis, and Incident Response](https://www.sans.org/cyber-security-courses/advanced-network-forensics-threat-hunting-incident-response/)
+  - [FOR578: Cyber Threat Intelligence](https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/)
+  - [FOR608: Enterprise-Class Incident Response & Threat Hunting](https://www.sans.org/cyber-security-courses/enterprise-incident-response-threat-hunting/)
 
 
 # CompTIA
