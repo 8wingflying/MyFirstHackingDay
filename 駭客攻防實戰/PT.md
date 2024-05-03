@@ -15,6 +15,13 @@
 
 # IPAS 初階考題
 ```
+關於提權(Privilege Escalation)，下列敘述何者正確？
+(A)提升使用者權限至系統管理權限
+(B)刪除入侵軌跡
+(C)刪除使用者帳號
+(D)找出具有最高權限的帳號
+```
+```
 下列何者為探測通訊埠（Port）的軟體？
 (A) Appscan (B) Nmap (C) Burp Suite (D) Telnet
 ```
@@ -79,7 +86,90 @@
 成功滲透到某個網站後，為了避免觸發相關警示而通知 IT 人員，於是採用「免殺（迴避防毒軟體的偵測）」的手法。發現該主機為一台 Windows 10 所搭建網站系統，決定使用Windows 作業系統中相關工具程式來進行 Command & Control，下面哪些 Windows 作業系統「原生」指令可以使用在遠端下載？
 (A) Bitsadmin.exe (B) Certutil.exe (C) HH.exe (D) Update.exe
 ```
+
+- [Windows commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+  - [英文版](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+  - [Bitsadmin.exe](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/bitsadmin)
+    - BITSAdmin == BITS管理工具(管理BITS任務的命令列工具) ==> Bitsadmin 是一種命令列工具，可用來建立、下載或上傳作業，以及監視其進度。 
+    - [BITS|背景智慧型傳輸服務|Background Intelligent Transfer Service](https://zh.wikipedia.org/zh-tw/%E5%90%8E%E5%8F%B0%E6%99%BA%E8%83%BD%E4%BC%A0%E8%BE%93%E6%9C%8D%E5%8A%A1)
+      - BITS是微軟在Windows 2000及後續版本中包含的一個組件。
+      - 它有助於利用空閒網路頻寬在電腦之間非同步、有優先級及自我限制地傳輸檔案，並主要在較新版本的Windows Update、Microsoft Update、Windows Server更新服務和系統管理伺服器用於交付修補程式到客戶端。
+      - 反病毒軟體Microsoft Security Essentials（及之後的Windows Defender）也使用它取得簽章更新，並且微軟的即時通訊產品會使用它來傳輸檔案。
+      - BITS通過組件對象模型（COM）介面供外部呼叫。
+    - Bitsadmin 工具會使用參數來識別要執行的工作。
+      - 可以呼叫 bitsadmin /? 或 bitsadmin /help 來取得參數的清單。
+      - 大部分的 <job> 參數都需要參數，您可以將其設定為作業的顯示名稱或 GUID。
+      - 作業的顯示名稱不一定是唯一的。
+      - /Create和/list參數會傳回作業的 GUID。
+      - 更多 bitsadmin 參數 請參看[bitsadmin](./bitsadmin.md)
+    - [bitsadmin 範例](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/bitsadmin-examples)
+      - `bitsadmin /list`  ==>  使用 /list 參數監視傳輸佇列中的作業
+      - `bitsadmin /monitor` ==> 使用 /monitor 參數監視傳輸佇列中的作業
+      - `bitsadmin /reset` ==> 取消目前使用者之傳輸佇列中的所有作業
+      - `bitsadmin /create myDownloadJob`==> 建立名為 myDownloadJob的下載作業 | BITSAdmin 會傳回可唯一識別作業的 GUID。 在後續呼叫中使用 GUID 或作業名稱。
+      - `bitsadmin /transfer myDownloadJob /download /priority normal https://downloadsrv/10mb.zip c:\\10mb.zip`
+        - 啟動名為 myDownloadJob的傳輸作業 Add files to the download job
+        - 更多說明 請參看[bitsadmin transfer](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/bitsadmin-transfer)
+  - Certutil.exe [微軟官方說明](https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/certutil)
+    - Certutil.exe是安裝為憑證服務的一部分的命令列程式。
+    - 可以使用certutil.exe來顯示憑證授權單位單位 (CA) 設定資訊、設定憑證服務、備份和還原 CA 元件。
+    - 此程式也會驗證憑證、金鑰組和憑證鏈結。
+    - 如果在憑證授權單位單位上執行 certutil 而沒有其他參數，則會顯示目前的憑證授權單位單位設定。
+    - 如果在非憑證授權單位單位上執行 certutil，命令預設為執行 certutil [-dump] 命令。
+    - 功能範例:
+      - 功能1.Base 64編碼與解碼
+        - certutil [options] -encode infile outfile ==> 將檔案編碼為 Base64
+        - certutil [options] -decode infile outfile ==> 解碼 Base64 編碼的檔案
+      - 功能2.憑證服務處理
+        - certutil [options] -CA [CAName | templatename]  ==>  顯示註冊原則憑證授權單位單位
+        - certutil [options] -shutdown ==> 關閉 Active Directory 憑證服務
+        - certutil [options] -backupkey backupdirectory ==> 備份 Active Directory 憑證服務憑證和私密金鑰
+          - backupdirectory 是用來儲存已備份 PFX 檔案的目錄。 
+        - certutil [options] -backup backupdirectory [incremental] [keeplog] ==> 備份 Active Directory 憑證服務
+          - backupdirectory 是用來儲存備份資料的目錄。
+          - incremental 只會執行增量備份， (預設值為完整備份) 。
+          - keeplog 會保留資料庫記錄檔， (預設值是截斷記錄檔)  
+      - 功能3.下載駭客最愛的惡意程式
+        - certutil.exe -urlcache -split -f [URL] output.file 
+      - 更多說明請參閱
+        - [Certutil工具（Windows命令行下载常用）](https://blog.csdn.net/bring_coco/article/details/117352716)
+        - [Windows上自带的渗透测试工具：Certutil](https://zhuanlan.zhihu.com/p/107819644)
+        - [CertUtil abused by attackers to spread threats](https://www.avira.com/en/blog/certutil-abused-by-attackers-to-spread-threats)
+        - [CertUtil.exe Could Allow Attackers To Download Malware While Bypassing AV](https://www.bleepingcomputer.com/news/security/certutilexe-could-allow-attackers-to-download-malware-while-bypassing-av/)
+        - [Windows(Win10)自带的可用于文件校验(Hash校验,SHA256校验,MD5校验等)的命令: CertUtil 和 Get-FileHash](https://blog.csdn.net/kfepiza/article/details/129152496?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-129152496-blog-117352716.235^v38^pc_relevant_anti_t3&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
+  - HH.exe
+    - hh.exe是微軟windows系統程式，.chm副檔名的幫助檔(helper)默認是用hh.exe打開。
+    - 如果用戶此時並沒有查看chm格式的電子書檔或幫助檔，hh.exe又在進程中反復出現，則可能中了hh.exe病毒。
+    - 在正常情況下不建議使用者對該類檔案（hh.exe）進行隨意的修改。它的存在對維護電腦系統的穩定具有重要作用。
+    - CHM檔是Windows的一種幫助檔案格式, 它主要是由.html 轉換製作出來的，有時我們需要將.CHM檔反向轉換成 .html 格式檔，即chm to html。我們可以利用Windows自帶的hh.exe檔來進行檔案格式轉換。
+    - 轉換語法為：hh -decompile 目的檔案夾 源CHM檔案名。 ==> hh -decompile d:\test\help help.chm
+    - 更多說明請參看 [微軟windows系統程式 hh.exe](https://baike.baidu.com/item/hh.exe/10474729)
+    - [通過編譯的 HTML 幫助文件傳播的惡意軟件](https://blog.rootshell.be/2017/12/19/malware-delivered-via-compiled-html-help-file/)
+      - .chm 文件是編譯的 HTML 幫助文件，可能包括文本、圖像和超鏈接。
+      - 可以在瀏覽器中查看；作為在線幫助解決方案在程序中或通過 Windows 通過特定工具：hh.exe。
+      - 與大多數 Microsoft 文件格式一樣，它還可以鏈接到可從 HTML 文件啟動的外部資源==>惡意腳本或可執行文件
+      - MITRE 戰技 T1218.001	Compiled HTML File [System Binary Proxy Execution: Compiled HTML File](https://attack.mitre.org/techniques/T1218/001/)
+      - [Procedure for generating Malicious CHM file](https://gist.github.com/mgeeky/cce31c8602a144d8f2172a73d510e0e7)
+- [更多 windows 指令與相關知識 (有時間請多多充實windows 指令的用法) ](windows.md)
+- 更多WINDOWS知識 請參閱 [Windows組件列表](https://zh.wikipedia.org/zh-tw/Windows%E7%BB%84%E4%BB%B6%E5%88%97%E8%A1%A8)|[Microsoft Windows components](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_components)
 ## IPAS 中階考題【題組】 110年度第五題組 nc == Netcat 
+
+```
+
+```
+
+```
+題組背景描述如附圖。
+請問操控端下達何種指令時，等待接聽 TCP 80 port，若接收到連線，就可以將 test.txt 傳送給對方？
+(A) nc -l -p 80 ＜ type test.txt（操控端）
+(B) nc -t -p 80 ＜ type test.txt（操控端）
+(C) nc -g -p 80 ＞ type test.txt（操控端）
+(D) nc -g -p 80 ＜ type test.txt（操控端）
+```
+```
+
+```
+
 - Netcat 是 Linux 系統中一個多功能的工具程式 ==> 網路瑞士刀
 - 幾乎任何使用 TCP 或 UDP 封包的動作都可以用它來達成，是許多系統管理者（包含我自己）最喜愛的網路診斷工具之一
 - [Netcat（Linux nc 指令）網路管理者工具實用範例](https://blog.gtwang.org/linux/linux-utility-netcat-examples/)
