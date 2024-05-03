@@ -1,6 +1,7 @@
 # 滲透測試
 - 滲透測試(Penetration Test, PT)
 - 滲透測試方法論(Methodology)
+  - OSSTMM (112年中階考題) 
 - 滲透測試主要步驟|工具與技術
   - 偵察(reconnaissance)
   - Open-Source Intelligence(OSINT) (開放情報蒐集)
@@ -152,12 +153,41 @@
       - [Procedure for generating Malicious CHM file](https://gist.github.com/mgeeky/cce31c8602a144d8f2172a73d510e0e7)
 - [更多 windows 指令與相關知識 (有時間請多多充實windows 指令的用法) ](windows.md)
 - 更多WINDOWS知識 請參閱 [Windows組件列表](https://zh.wikipedia.org/zh-tw/Windows%E7%BB%84%E4%BB%B6%E5%88%97%E8%A1%A8)|[Microsoft Windows components](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_components)
+
 ## IPAS 中階考題【題組】 110年度第五題組 nc == Netcat 
-
 ```
-
+小張為某公司資安工程師，其使用某工具並輸入了下列的指令執行：
+nc -vzw5 192.168.0.1 1-2048(操控端)
+nc -v -z -w5 192.168.0.1 1-2048(操控端)
+nc -ltp 80(操控端)
+nc -l -p 80 < /test.txt(操控端)
+nc -t -p 80 < /test.txt(操控端)
+nc -g -p 80 > /test.txt(操控端)
+nc -g -p 80 < /test.txt(操控端)
+nc -l -p 80(操控端)
 ```
-
+```
+題組背景描述如附圖。請問小張使用此工具的主要目的為下列何者？
+(A) NetChannel 工具通常使用於網路管理情境之下，主要目的為建立 網路通道之用
+(B) NoCommand 工具通常使用於將 DOS Command 轉換為 GUI 介面 執行
+(C) NoCommunication 工具通常使用於建立雙方之通訊連線
+(D) NetCat 工具通常使用於網路管理情境之下，亦為滲透測試常用工 具之一
+```
+```
+題組背景描述如附圖。關於附圖兩個指令的執行結果，何者正確？
+(A) 結果相同，對 192.168.0.1 主機進行 vpn 連線，且連線時間設定 2048 秒
+(B) 結果不同，對 192.168.0.1 主機進行監聽，且監聽時間設定 2048 秒
+(C) 結果相同，對 192.168.0.1 主機之 TCP port 1-2048 進行掃描，且 連線逾時設定 5 秒
+(D) 結果不同，對 192.168.0.1 主機之 UCP port 1-2048 進行掃描，且 連線逾時設定 5 秒
+```
+```
+複選題
+題組背景描述如附圖。請問題目中指令 nc -ltp 80（操控端）的執行結 果為下列何者？（複選）
+(A) 關閉 telnet 模式
+(B) 啟動 telnet 模式
+(C) 阻斷 80 port
+(D) 指定 80 port 為監聽 port
+```
 ```
 題組背景描述如附圖。
 請問操控端下達何種指令時，等待接聽 TCP 80 port，若接收到連線，就可以將 test.txt 傳送給對方？
@@ -166,9 +196,7 @@
 (C) nc -g -p 80 ＞ type test.txt（操控端）
 (D) nc -g -p 80 ＜ type test.txt（操控端）
 ```
-```
 
-```
 
 - Netcat 是 Linux 系統中一個多功能的工具程式 ==> 網路瑞士刀
 - 幾乎任何使用 TCP 或 UDP 封包的動作都可以用它來達成，是許多系統管理者（包含我自己）最喜愛的網路診斷工具之一
