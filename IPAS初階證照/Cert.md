@@ -83,6 +83,9 @@ Domain 8: 軟體開發安全Software Development Security
 - 資安專業證照學習地圖: 建議先取得經濟部產業人才能力鑑定|IPAS初階與中階資訊安全工程師證照後再循序學習
 - 崑山資工搭配課程:高等資訊安全 | 電腦攻防實務 | 滲透測試 | 網站安全
 - 適合職業:資安系統工程師、網路系統工程師、資安分析人員、滲透測試人員、資訊部門主管、資安長、資安顧問
+- 學習資源
+  - https://github.com/SecureLine-Solutions-Pvt-Ltd/CEH-v12-Guide
+  - https://github.com/Aftab700/CEH_Notes/tree/main
 
 # CEH Practical  ==> CEH + CEH|P == CEH Master
 - [EC-Council CEH Practical / Master 準備心得](https://medium.com/blacksecurity/ceh-practical-master-3e80cac180a2)
