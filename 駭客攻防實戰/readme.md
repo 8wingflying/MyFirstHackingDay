@@ -72,7 +72,7 @@
     - taskkill /PID XXXX /F
       - /F 參數強制進程終止，這對於許多不想關閉的討厭任務很有用。 
 
-## 更多Metasploitable3解題 [靶機(metasploitable3)](metasploitable3.md)
+## 更多Metasploitable3解題
 - [Rapid7官方網站 rapid7/metasploitable3-win2k8](https://app.vagrantup.com/rapid7/boxes/metasploitable3-win2k8)
 - [OVA下載點 metasploitable3-ub1404upgraded](https://sourceforge.net/projects/metasploitable3-ub1404upgraded/)
 - [漏洞說明Metasploitable 3 Vulnerabilities](https://github.com/rapid7/metasploitable3/wiki/Vulnerabilities)
