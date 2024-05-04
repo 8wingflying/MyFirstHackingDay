@@ -1,4 +1,6 @@
 # Windows AD 與 內網滲透測試
+- Windows 環境: Workgroup vs AD
+  - [Active Directory 網域服務](https://learn.microsoft.com/zh-tw/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)  
 - Buffer Overflow
   - Windows buffer overflow
   - Linux Buffer Overflow 
