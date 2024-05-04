@@ -107,7 +107,7 @@
     - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
   - 更多紅藍攻防
   - 準備要考OSCP等實戰證照
-    - [rkhal101/Hack-the-Box-OSCP-Preparation](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview#)
+    - [rkhal101/Hack-the-Box-OSCP-Preparation](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
   - Red team 滲透測試靶機
     - [Hack The Box: Hacking Training For The Best](https://www.hackthebox.com/)
     - [TryHackMe | Cyber Security Training](https://tryhackme.com/)
