@@ -10,7 +10,7 @@
   - 滲透|漏洞利用(Exploitation)
   - 提升權限(Privilege Escalation)
   - 維持存取(Post-exploitation)
-- Windows AD 與 內網滲透測試
+- [Windows AD 與 內網滲透測試](IPT.md)
 - 紅隊演練(red team)
 - 滲透測試報告
 
