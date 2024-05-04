@@ -1,0 +1,34 @@
+# Windows AD 與 內網滲透測試
+- Buffer Overflow
+  - Windows buffer overflow
+  - Linux Buffer Overflow 
+- Privilege Escalation權限提升
+  - [MITRE ATT&CK | Privilege Escalation(14個戰技)](https://attack.mitre.org/tactics/TA0004/)
+  - [Privilege Escalation Techniques(2021)](https://www.packtpub.com/product/privilege-escalation-techniques/9781801078870)
+- [MITRE ATT&CK |Persistence(20個戰技)](https://attack.mitre.org/tactics/TA0003/)
+## 參考書籍與推薦章節
+- [Red Teaming Experiments(有許多整理好的主題)](https://www.ired.team/)
+  - [Active Directory & Kerberos Abuse](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse) 
+  - [Privilege Escalation](https://www.ired.team/offensive-security/privilege-escalation)
+  - [Credential Access & Dumping](https://www.ired.team/offensive-security/credential-access-and-credential-dumping)
+- [Cybersecurity – Attack and Defense Strategies - Second Edition](https://www.packtpub.com/product/cybersecurity-attack-and-defense-strategies-second-edition/9781838827793)
+- [駭客就在你旁邊：內網安全攻防滲透你死我活|徐焱、賈曉璐 著 2021](https://www.tenlong.com.tw/products/9789860776010)
+  - 第3 章 隱藏通訊隧道技術
+  - 第4 章 許可權提升分析及防禦
+  - 第8 章 許可權維持分析及防禦
+- [黑客秘笈 : 滲透測試實用指南, 3/e (The Hacker Playbook 3: Practical Guide To Penetration Testing)Peter Kim](https://www.tenlong.com.tw/products/9787115529176)
+- [資安風險評估指南 (Network Security Assessment, 3/e) Chris McNab 著、江湖海 譯(2017)](https://www.tenlong.com.tw/products/9789864765478)
+- Youtube影片 [Ethical Hacking full Course in One Video | Beginner to Advanced | Get Ready for Job in IT Security(2021年12月2日)](https://www.youtube.com/watch?v=jqZ5w0Lreq0)
+- 貴三三的精彩課程SANS
+- [超重要 The Ultimate List of SANS Cheat Sheets](https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/)
+- [Powershell For Enterprise & Cloud Compliance](https://sansorg.egnyte.com/dl/bE1GUG1MSu)
+- [SEC580: Metasploit Kung Fu for Enterprise Pen Testing(兩天課程)](https://www.sans.org/cyber-security-courses/metasploit-kung-fu-enterprise-pen-testing/)
+- [SEC504: Hacker Tools, Techniques, Exploits, and Incident Handling](https://www.sans.org/cyber-security-courses/hacker-techniques-incident-handling/)
+  - GIAC Certified Incident Handler 
+- [SEC560: Network Penetration Testing and Ethical Hacking](https://www.sans.org/cyber-security-courses/network-penetration-testing-ethical-hacking/)
+  - GIAC Penetration Tester 
+- [SEC660: Advanced Penetration Testing, Exploit Writing, and Ethical Hacking]()
+- [SEC588: Cloud Penetration Testing](https://www.sans.org/cyber-security-courses/cloud-penetration-testing/)
+  - GIAC Cloud Penetration Testing (GCPN) 
+- [SEC542: Web App Penetration Testing and Ethical Hacking](https://www.sans.org/cyber-security-courses/web-app-penetration-testing-ethical-hacking/)
+  - GIAC Web Application Penetration Tester (GWAPT) 
