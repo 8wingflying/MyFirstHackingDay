@@ -105,7 +105,7 @@
   - 滲透測試專題 Hacking Articles
     - [Penetration Testing](https://www.hackingarticles.in/penetration-testing/)
     - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
-  - 更多紅藍攻防
+  - 更多紅藍攻防 see [滲透測試實戰](PT_LABs.md)
   - 準備要考OSCP等實戰證照
     - [rkhal101/Hack-the-Box-OSCP-Preparation](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
   - Red team 滲透測試靶機
