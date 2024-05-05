@@ -100,20 +100,20 @@
     - 範例1: where /R C: svchost
     - 範例2: WHERE /r c:\windows *.exe *.dll *.bat
     - https://learn.microsoft.com/zh-tw/windows-server/administration/windows-commands/where
-- 後續研讀
+- 更多滲透測試實戰
   - [Log4J 漏洞分析與Penetration Testing](Log4J.md)
   - 滲透測試專題 Hacking Articles
     - [Penetration Testing](https://www.hackingarticles.in/penetration-testing/)
     - [Web Penetration Testing](https://www.hackingarticles.in/web-penetration-testing/)
-  - 更多紅藍攻防 see [滲透測試實戰](PT_LABs.md)
-  - 準備要考OSCP等實戰證照
-    - [rkhal101/Hack-the-Box-OSCP-Preparation](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
-  - Red team 滲透測試靶機
-    - [Hack The Box: Hacking Training For The Best](https://www.hackthebox.com/)
-    - [TryHackMe | Cyber Security Training](https://tryhackme.com/)
-    - [VulnHub| Vulnerable By Design](https://www.vulnhub.com/) 
-  - Blue Team
-    - [LetsDefend - Blue Team Training](https://www.letsdefend.io/) 
+  - 推薦紅藍攻防 see [滲透測試實戰](PT_LABs.md)
+    - 準備要考OSCP等實戰證照
+      - [rkhal101/Hack-the-Box-OSCP-Preparation](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
+    - Red team 滲透測試靶機
+      - [Hack The Box: Hacking Training For The Best](https://www.hackthebox.com/)
+      - [TryHackMe | Cyber Security Training](https://tryhackme.com/)
+      - [VulnHub| Vulnerable By Design](https://www.vulnhub.com/) 
+    - Blue Team
+      - [LetsDefend - Blue Team Training](https://www.letsdefend.io/) 
 
 
 ![Mimikatz](Mimikatz.png)
