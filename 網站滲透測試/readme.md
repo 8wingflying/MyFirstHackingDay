@@ -5,6 +5,6 @@
 - 4.網站漏洞測試(3).[File Upload 漏洞](DVWA_3.md)
 - 5.網站漏洞測試(4).[File inclusion 漏洞](DVWA_4.md)
 
-## 延伸學習 [MyFirstWebSecurity網站安全測試研習營](WebSecurity.md)
+
 
 
