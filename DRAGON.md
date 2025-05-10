@@ -1,4 +1,4 @@
-# [恩師 龍大大](DRAGON.md)
+# 恩師 龍大大 基本資料
 ![Dragon](DRAGON_1.png)
 
 | CEH | CHFI|
@@ -7,10 +7,14 @@
 |![CEH.png](CEH.png) |![CHFI.png](CHFI.png)|
 
 #### 崑山資工 CEH 耀眼成果
-![崑山資工 CEH認證中心](CEH_1.png)
 - 103年21名師生成功取得CEH證照(第8版)
 - 105年CEH證照更新版本為第9版(較前版困難) 9位學生成功順利取得CEH證照
+  
+![崑山資工 CEH認證中心](CEH_1.png)
 
-#### 獲獎
+
+#### IPAS 中階 資安工程師 證照班 無可匹敵
+
+#### 恩師龍大大獲獎資料
 ![edu1.jpg](edu1.jpg) 
 ![edu2.jpg](edu2.jpg) 
